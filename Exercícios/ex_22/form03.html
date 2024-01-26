@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="icor">
+    </p>
+    <p>
+        <label for="inivel"> Nível de Satisfação</label>
+        <input type="range" name="nivel" id="inivel">
+    </p>
+    <p>
+        <label for="ifile"> Arquivo</label>
+        <input type="file">
+    </p>
+    <br>
+    <hr>
+    <br>
+    <p>
+        <label for="imsg">Mensagem:</label><br>
+        <textarea name="msg" id="imsg" cols="50" rows="7" placeholder="DIGITE AQUI A SUA MENSAGEM"></textarea>
+    </p>
+    <p>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lst">
+        <datalist id="lst">
+                    <option value="Mot">Motorista</option>
+                    <option value="Pil">Piloto</option>
+                    <option value="Pro">Serralheiro</option>
+        </datalist>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset">
+        </p>
+    </p>
+    </form>
+</body>
+</html>
