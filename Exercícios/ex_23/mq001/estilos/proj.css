@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    background-color: lightsalmon;
+}
